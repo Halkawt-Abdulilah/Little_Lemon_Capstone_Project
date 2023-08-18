@@ -1,13 +1,130 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'Markazi Text';
+  src: url('./fonts/MarkaziText.ttf');
+}
+@font-face {
+  font-family: 'Karla';
+  src: url('./fonts/Karla.ttf');
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #fcf3f6;
+}
+
+.bg-primary {
+  background-color: #f4ce14;
+}
+
+.color-primary {
+  color: #f4ce14;
+}
+
+.bg-secondary {
+  background-color: #495e57;
+}
+.color-secondary {
+  color: #495e57;
+}
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.homePadding {
+  padding: 2em 10em;
+}
+
+.center{
+  text-align: center;
+}
+
+.markazi {
+  font-family: 'Markazi Text';
+  font-size: 18pt;
+}
+.title {
+  font-size: 40pt;
+  font-family: 'Markazi Text';
+}
+.subTitle {
+  font-size: 30pt;
+  font-family: 'Markazi Text';
+}
+.paragraph {
+  font-family: 'Karla';
+}
+
+.star {
+  font-size: 18pt;
+}
+
+.filled-star {
+  color: gold;
+}
+.empty-star {
+  color: gray;
+}
+
+.content {
+  margin-top: 2em;
+}
+
+.content-b {
+  margin-bottom: 2em;
+}
+
+footer {
+  border-top: 10px groove #495e57;
+  display: flex;
+  height: auto;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer-logo {
+  width: auto;
+}
+
+.list-title {
+  font-size: 14pt;
+  align-self: flex-start;
+  margin-bottom: 1em;
+}
+.list-ul {
+  list-style-type: none;
+  margin-bottom: 1em;
+}
+.list-li {
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .footerGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+  }
+  
+  .footer-logo {
+    grid-area: 1 / 1 / 3 / 4;
+    align-items: center;
+    justify-self: center;
+    margin-bottom: 1em;
+  }
+  .linksGrid1 { grid-area: 2 / 1 / 3 / 2; }
+  .linksGrid2 { grid-area: 2 / 2 / 3 / 3; }
+  .linksGrid3 { grid-area: 2 / 3 / 3 / 4; }
 }

@@ -1,0 +1,19 @@
+.card {
+    background-color: #f2efef;
+    padding: 1em;
+    margin: 1em;
+    margin-bottom: 3em;
+    height: 150px;
+    width: 270px;
+    border-radius: 1em;
+}
+.image {
+    width: 50px;
+}
+.rating {
+    width: 100%;
+}
+.comment {
+    position: relative;
+    top: 20px;
+}

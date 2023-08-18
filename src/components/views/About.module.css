@@ -1,0 +1,104 @@
+.article {
+    max-width: 30vw;
+}
+
+.images {
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.chefImage,
+.restaurantImage {
+    position: absolute;
+    width: 280px;
+    border-radius: 1em;
+  }
+
+.restaurantImage {
+    top: -110px;
+    left: 280px;
+}
+
+.chefImage {
+    top: -40px;
+    left: 140px;
+}
+
+@media (max-width:1250px) {
+    .restaurantImage {
+        top: -90px;
+        left: 220px;
+    }
+    .chefImage {
+        top: -20px;
+        left: 100px;
+    }
+}
+@media (max-width:1020px) {
+    .restaurantImage {
+        top: -110px;
+        left: 180px;
+    }
+    .chefImage {
+        top: -40px;
+        left: 60px;
+    }
+}
+
+@media (max-width:970px){
+    .article {
+        max-width: 90vw;
+        margin-bottom: 8em;
+    }
+    .images {
+        width: 100%;
+        margin-bottom: 8em;
+        position: relative;
+    }
+    .restaurantImage {
+        top: -110px;
+        left: 230px;
+    }
+    .chefImage {
+        top: -40px;
+        left: 100px;
+    }
+}
+@media (max-width:800px){
+    .aboutSection {
+        padding: 2em 5em;
+    }
+    .restaurantImage {
+        top: -110px;
+        left: 220px;
+    }
+    .chefImage {
+        top: -40px;
+        left: 120px;
+    }
+}
+@media (max-width:700px){
+    .restaurantImage {
+        top: -110px;
+        left: 100px;
+    }
+    .chefImage {
+        top: -40px;
+        left: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .aboutSection {
+        padding: 0 3em;
+    }
+    .images {
+        display: none;
+    }
+}
+@media (max-width: 400px) {
+    .aboutSection {
+        padding: 2em;
+    }
+}

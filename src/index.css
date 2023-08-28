@@ -13,6 +13,13 @@
   src: url('./fonts/Karla.ttf');
 }
 
+.ct {
+  margin: 0 5em;
+}
+
+.input-error {
+  border-color: #fc8181 !important;
+}
 body {
   font-family: sans-serif;
   margin: 0;
